@@ -1,0 +1,8 @@
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\bin\Debug\PrimerProyecto.exe.config
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\bin\Debug\PrimerProyecto.exe
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\bin\Debug\PrimerProyecto.pdb
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.AssemblyReference.cache
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.SuggestedBindingRedirects.cache
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\obj\Debug\PrimerProyecto.exe
+C:\Users\Farid Ernesto\source\repos\Progra1-2024-semi\PrimerProyecto\PrimerProyecto\obj\Debug\PrimerProyecto.pdb
