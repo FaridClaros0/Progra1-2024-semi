@@ -10,16 +10,34 @@ namespace PrimerProyecto
     {
         static void Main(string[] args)
         {
-            //ejercicio de obtener la nota final de la materia de Programacion I.
-            //ejercicio obtener el promedio de una serie de numeros
-            int[] serie = new int[] { 5, 4, 6, 8, 9 }; //32
-            int suma = 0;
-            foreach (int num in serie)
-            {
-                suma += num;
+            //estructuras de control
+            // 1. if. ejercicio de mayoria de edad
+            Console.Write("Edad:");
+            int edad = int.Parse(Console.ReadLine());
+
+            if (edad <0) {
+                Console.WriteLine("Edad incorrecta");
             }
-            decimal prom = suma / serie.Length;
-            Console.WriteLine("La suma es: {0}, el promedio {1}", suma, prom);
+            else if (edad <=2) {
+                Console.WriteLine("Eres un bebe");
+            }
+            else if (edad <12) 
+            {
+                 Console.WriteLine("Eres un niño");
+            } else if (edad <18)
+            { 
+                Console.WriteLine("Eres un adolescente");
+            }
+            else if (edad <=65)
+            {
+                Console.WriteLine("Bienvenido al mundo de las responsabilidades");  
+            } else if (edad <=80)
+            {
+                Console.WriteLine("Eres un adulto mayror");
+            } else {
+                Console.WriteLine("Larga vida");
+            }
+
             //Pausa.
             Console.ReadLine();
 
