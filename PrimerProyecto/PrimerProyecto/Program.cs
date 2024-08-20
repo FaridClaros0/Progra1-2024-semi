@@ -10,27 +10,30 @@ namespace PrimerProyecto
     {
         static void Main(string[] args) {
             //  ejercicio de sacar la media aritmetca y la desviacion tipica de una serie de numeros    
-            int[] serie = new int[] { 1, 2, 3, 4, 5 };
-            Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}", media(serie), tipica(serie));
+            Console.Write("Ingrese los numeros separados por comas: ");
+            string serie = Console.ReadLine();
+            string[] numeros = serie.Split(',');
+
+            Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}", media(numeros), tipica(numeros));
 
             Console.ReadLine();
         }
-            static double media(int[] serie)
+            static double media(string[] serie)
         {
             double media = 0;
-            foreach (int num in serie)
+            foreach (string num in serie)
             {
-                media += num;
+                media += int.Parse(num);
             }
             return media / serie.Length;
         }
-        static double tipica(int[] serie)
+        static double tipica(string[] serie)
         {
             double tipica = 0,
                     m = media(serie);
-            foreach (int num in serie)
+            foreach (string num in serie)
             {
-                tipica += Math.Pow(num - m, 2);
+                tipica += Math.Pow(int.Parse (num) - m, 2);
             }
             tipica = Math.Sqrt(tipica / serie.Length);
             return Math.Round(tipica, 2);
