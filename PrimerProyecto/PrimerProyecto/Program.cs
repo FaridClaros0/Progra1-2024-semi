@@ -9,22 +9,31 @@ namespace PrimerProyecto
     internal class Program
     {
         static void Main(string[] args) {
-            // determinar si cada numero de la serie es primo.
+            //  ejercicio de sacar la media aritmetca y la desviacion tipica de una serie de numeros    
+            int[] serie = new int[] { 1, 2, 3, 4, 5 };
+            Console.WriteLine("La media aritmetica es: {0}, y la desviacion tipica es: {1}", media(serie), tipica(serie));
 
-            int[] Serie = new int[] { 5, 9, 4, 6, 3, 2,7,11,15,17,21 };
-            foreach (int num in Serie)
-            {
-                int i = 1,
-                    n = 0;
-                while (i <= num && n<=2){
-                    if (num % i == 0){
-                        n++;
-                    }
-                    i++;
-                }
-                Console.WriteLine("El numero es {0} {1}", num, n<=2 ? "es primo" : "no es primo");
-            }
             Console.ReadLine();
+        }
+            static double media(int[] serie)
+        {
+            double media = 0;
+            foreach (int num in serie)
+            {
+                media += num;
+            }
+            return media / serie.Length;
+        }
+        static double tipica(int[] serie)
+        {
+            double tipica = 0,
+                    m = media(serie);
+            foreach (int num in serie)
+            {
+                tipica += Math.Pow(num - m, 2);
+            }
+            tipica = Math.Sqrt(tipica / serie.Length);
+            return Math.Round(tipica, 2);
         }
     }
 }
